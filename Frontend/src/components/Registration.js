@@ -26,9 +26,10 @@ function Registration() {
                         <label >Password</label>
                     </div>
                     <button className="signup_btn" type="submit">Create Account</button>
-                    {/* <div className="login_link">
-                        Already have Account? <Link className="signup_l" to="/login">Login</Link>
-                    </div> */}
+                    <div className="login_link">
+                        Already have Account? 
+                        <a href="hello" className="signup_l" >Login</a>
+                    </div>
                 </form>
             </div>
         </div>

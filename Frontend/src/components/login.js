@@ -19,9 +19,10 @@ function Login(){
                     </div>
                     <div className="forgot">Forgot Password?</div>
                     <button className="login_btn" type="submit" >Login</button>
-                    {/* <div className="signup_link">
-                        Not a member? <Link to="/register" className="login_l">Sign up</Link>
-                    </div> */}
+                    <div className="login_link">
+                        Not a member? 
+                        <a href="hello" className="signup_l" >Sign-up</a>
+                    </div>
                 </form>
             </div>
         </div>
