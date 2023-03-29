@@ -46,4 +46,7 @@ group :development do
   # gem "spring"
 end
 
-gem 'faker'
+gem "active_model_serializers"
+gem 'byebug'
+
+gem 'foreman', '~> 0.87.2'
