@@ -47,5 +47,5 @@ end
 
 gem "active_model_serializers"
 gem 'byebug'
-
+gem 'faker'
 gem 'foreman', '~> 0.87.2'
