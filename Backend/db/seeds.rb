@@ -11,15 +11,15 @@ puts "Seeding..."
   )
 end
 
-# Create 10 fake review data
+# Generate 10 fake reviews
 10.times do
-  Review.create( 
-    rating: Faker::Number.between(from: 1, to: 5),
-    comment: Faker::Lorem.sentence(word_count: 10),
-    user_id: Faker::Number.unique.between(from: 1, to: 100),
-    movie_id: Faker::Number.between(from: 1, to: 10)
-  )
+  rating = Faker::Number.between(from: 1, to: 5)
+  comment = Faker::Lorem.paragraph(sentence_count: 3)
+  user_id = Faker::Number.between(from: 1, to: 20)
+  movie_id = Faker::Number.between(from: 1, to: 50)
+  Review.create(rating: rating, comment: comment, user_id: user_id, movie_id: movie_id)
 end
+
 
 # Create 10 movie reviews
 10.times do
