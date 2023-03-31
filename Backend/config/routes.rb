@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :movie_reviews
     # GET route for getting a review by id
   get '/reviews/:id', to: 'reviews#show'
 
