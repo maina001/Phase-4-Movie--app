@@ -6,7 +6,8 @@ puts "Seeding..."
     image: Faker::LoremFlickr.image(size: "300x300", search_terms: ['movie']),
     title: Faker::Movie.title,
     year: Faker::Number.between(from: 2000, to: 2023),
-    director: Faker::Name.name
+    director: Faker::Name.name,
+    genre: Faker::Book.genre
   )
 end
 
