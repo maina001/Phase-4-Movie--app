@@ -53,6 +53,7 @@ function Reviews() {
   return (
     <div className="reviews">
       <div className="movie">
+        <h2>Review Section</h2>
         <form onSubmit={handleSubmit}>
           <label>
             Movie:

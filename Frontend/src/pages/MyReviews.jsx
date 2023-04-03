@@ -26,8 +26,8 @@ function MyReviews() {
     <div className="Review">
       {review.map((rev) => (
         <div>
-            <h4 className="rev-header"></h4>
-            <h5 className="rev-movie"></h5>
+            <h4 className="rev-header">haa</h4>
+            <h5 className="rev-movie">hii</h5>
             <p className="rev-p">{rev.comment}</p>
 
         </div>
