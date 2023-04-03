@@ -8,6 +8,7 @@ import MyVotes from './pages/MyVotes';
 import Navbar from './components/NavBar';
 import MyReviews from './pages/MyReviews';
 import Reviews from './pages/Reviews';
+import About from './pages/About';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>} />
+        <Route path="/about" element={<About/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
         <Route path="/reviews" element={<Reviews/>} />

@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroSection from '../components/Hero'
 import Reviews from './Reviews'
 import Votes from './Votes'
 // import useUserIdStore from '../store/User';
@@ -8,10 +9,10 @@ function Home() {
 
   return (
     <div>
+      <HeroSection/>
       <h2>Vote section</h2>
       <Votes/>
       
-      <h2>Review section</h2>
       <Reviews/>
 
     </div>

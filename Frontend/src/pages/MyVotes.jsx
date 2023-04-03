@@ -10,7 +10,6 @@ function MovieCard({ movie }) {
         <h5 className="card-title">{movie.title}</h5>
         <p className="card-text">{movie.category}</p>
         <small className="card-text">{movie.year}</small>
-        <button className='card-btn' onClick={handlesubmit}>DELETE</button>
       </div>
     </div>
   );
