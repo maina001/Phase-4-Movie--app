@@ -1,10 +1,10 @@
 class CreateReviews < ActiveRecord::Migration[7.0]
   def change
     create_table :reviews do |t|
-      t.integer :rating
+      t.text :movie
       t.text :comment
-      t.integer :user_id
-      t.integer :movie_id
+      t.belongs_to :user, null: false, foreign_key: true
+      t.belongs_to :movie, null: false, foreign_key: true
 
       t.timestamps
     end
