@@ -1,5 +1,6 @@
 class UserMoviesController < ApplicationController
-  before_action :set_user_movie, only: %i[ show update ]
+  before_action :set_user_movie, only: %i[ :show, :update ]
+  skip_before_action :authorized, only: [:create]
 
   # GET /user_movies
   def index
@@ -35,7 +36,7 @@ class UserMoviesController < ApplicationController
     end
   end
 
-  DELETE /user_movies/1
+  # DELETE /user_movies/1
   def destroy
     @user_movie.destroy
   end

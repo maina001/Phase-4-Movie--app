@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-    # skip_before_action :authorized, only: :login
+    skip_before_action :authorized, only: [:login, :destroy]
 
     # Login endpoint
     def login
