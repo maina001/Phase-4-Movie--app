@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+    skip_before_action :authorized, only: :create
+
     def index
         reviews  = Review.all
         render json: reviews
